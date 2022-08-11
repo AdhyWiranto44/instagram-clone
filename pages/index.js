@@ -1,28 +1,25 @@
-import {
-  BsSearch,
-  BsHouseDoor,
-  BsChatText,
-  BsPlusSquare,
-  BsCompass,
-  BsHeart
-} from 'react-icons/bs';
+import Navbar from '../components/navbar';
 
 export default function Home() {
   return (
     <>
-      <div id='navbar' className='container-fluid px-4 lg:px-40 xl:px-56 py-2 sticky bg-white top-0 border-b flex justify-between items-center'>
-        <img src={`nav_logo.png`} width={110} />
-        <div id="searchbar" className='hidden md:flex items-center text-gray-400 bg-gray-100 px-4 py-2 rounded-xl'>
-          <BsSearch />
-          <input type="text" placeholder='Search' className='ml-3 bg-gray-100' />
+      <Navbar />
+      <div id="main" className='container-fluid lg:px-40 xl:px-56 mt-0 md:mt-6 flex justify-center'>
+        <div id="left" className='w-full md:w-8/12'>
+          <div id="stories" className='bg-white border-b md:border mb-6'>
+            stories
+          </div>
+          <div id="posts" className='bg-white border-t border-b md:border'>
+            posts
+          </div>
         </div>
-        <div id="navmenus" className='hidden sm:flex items-center'>
-          <BsHouseDoor className='text-2xl' />
-          <BsChatText className='text-2xl ml-6' />
-          <BsPlusSquare className='text-2xl ml-6' />
-          <BsCompass className='text-2xl ml-6' />
-          <BsHeart className='text-2xl ml-6' />
-          <img className='ml-6 rounded-full' src='mina.jpg' width={24} height={24} />
+        <div id="right" className='hidden lg:block lg:w-4/12 ml-6'>
+          <div id="profile">
+            profile
+          </div>
+          <div id="suggestions">
+            suggestions
+          </div>
         </div>
       </div>
     </>
