@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
   BsSearch,
   BsHouseDoor,
@@ -16,7 +17,11 @@ export default function Navbar() {
         <input type="text" placeholder='Search' className='ml-3 bg-gray-100' />
       </div>
       <div id="navmenus" className='flex items-center'>
-        <BsHouseDoor className='text-2xl' />
+        <Link href="/">
+          <a>
+            <BsHouseDoor className='text-2xl' />
+          </a>
+        </Link>
         <BsChatText className='text-2xl ml-6' />
         <BsPlusSquare className='text-2xl ml-6' />
         <BsCompass className='text-2xl ml-6' />
