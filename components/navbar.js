@@ -9,7 +9,7 @@ import {
 
 export default function Navbar() {
   return (
-    <div id='navbar' className='container-fluid px-4 lg:px-40 xl:px-56 py-2 sticky bg-white top-0 border-b flex justify-between items-center'>
+    <div id='navbar' className='container-fluid px-4 lg:px-40 xl:px-56 py-2 sticky bg-white top-0 border-b flex justify-between items-center z-10'>
       <img src={`nav_logo.png`} width={110} />
       <div id="searchbar" className='hidden md:flex items-center text-gray-400 bg-gray-100 px-4 py-2 rounded-xl'>
         <BsSearch />
