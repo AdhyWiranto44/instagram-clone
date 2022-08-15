@@ -8,8 +8,8 @@ const setMainImg = (igPost, photo) => {
 }
 
 const renderIndicator = (navIndicator, photos, active = 0) => {
-  let indicatorActive = '<div class="rounded-full w-2 h-2 mx-0.5 bg-blue-400"></div>';
-  let indicator = '<div class="rounded-full w-2 h-2 mx-0.5 bg-gray-400"></div>';
+  let indicatorActive = '<div class="rounded-full w-2 h-2 mx-0.5" style="background-color: rgb(96, 165, 250)"></div>';
+  let indicator = '<div class="rounded-full w-2 h-2 mx-0.5" style="background-color: rgb(156, 163, 175)"></div>';
 
   navIndicator.innerHTML = "";
   photos.forEach((p, idx) => {
