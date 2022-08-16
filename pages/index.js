@@ -18,7 +18,7 @@ export default function Home() {
                 <a>
                   {
                     story.story_posted ? (
-                      <div className='rounded-full' style={{ border: "3px", backgroundImage: "conic-gradient(#8134AF, #F58529, #FEDA77, #F58529, #DD2A7B)", padding: "3px" }}>
+                      <div className='rounded-full' style={{ border: "3px", backgroundImage: "conic-gradient(#DD2A7B, #8134AF, #F58529, #FEDA77, #F58529, #DD2A7B)", padding: "3px" }}>
                         <img className='border border-white rounded-full mx-auto' src='dahyun.jpg' width={59} height={59} />
                       </div>
                     ) : (
@@ -28,7 +28,7 @@ export default function Home() {
                     )
                   }
 
-                  <p className='text-xs'>
+                  <p className='text-xs text-center'>
                     {'bambang_sudarsono'.length > 10 ? 'bambang_sudarsono'.slice(0, 8) + '...' : 'bambang_sudarsono'}
                   </p>
                 </a>
