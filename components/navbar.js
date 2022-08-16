@@ -31,9 +31,9 @@ export default function Navbar() {
           <BsChatText className='text-2xl ml-6' />
           <BsPlusSquare className='text-2xl ml-6' />
           <BsCompass className='text-2xl ml-6' />
-          <button id='profile_menu' className='group relative focus:outline-none'>
+          <button id='profile_menu' className='group focus:outline-none static sm:relative'>
             <BsHeart className='text-2xl ml-6' />
-            <div id="dropdown" className='bg-white border shadow-md rounded-md w-96 right-0 mt-2 absolute invisible group-focus:visible'>
+            <div id="dropdown" className='bg-white border shadow-md rounded-md absolute right-0 mt-2 w-full sm:w-96 invisible group-focus:visible'>
               <ul className='text-left'>
                 <li className='px-4 py-2 hover:bg-gray-50'>
                   <Link href="">
@@ -41,8 +41,10 @@ export default function Navbar() {
                       <div className="flex items-center">
                         <img className='rounded-full mr-2' src='mina.jpg' width={42} height={42} />
                         <p>
-                          <b className='mr-1'>mina_sr_my</b>
-                          liked your post.
+                          <b className='mr-1'>{
+                            'mina_sr_my'.length > 10 ? 'mina_sr_my'.slice(0, 8) + '...' : 'mina_sr_my'
+                          }</b>
+                          liked your post. <span className='text-gray-500'>51s</span>
                         </p>
                       </div>
                       <img className='ml-2' src='post_1.jpg' width={42} height={42} />
@@ -55,8 +57,10 @@ export default function Navbar() {
                       <div className="flex items-center">
                         <img className='rounded-full mr-2' src='dahyun.jpg' width={42} height={42} />
                         <p>
-                          <b className='mr-1'>dahhyunnee</b>
-                          liked your post.
+                          <b className='mr-1'>{
+                            'dahhyunnee'.length > 10 ? 'dahhyunnee'.slice(0, 8) + '...' : 'dahhyunnee'
+                          }</b>
+                          liked your post. <span className='text-gray-500'>2h</span>
                         </p>
                       </div>
                       <img className='ml-2' src='post_1.jpg' width={42} height={42} />
@@ -69,8 +73,10 @@ export default function Navbar() {
                       <div className="flex items-center">
                         <img className='rounded-full mr-2' src='tzuyu.jpg' width={42} height={42} />
                         <p>
-                          <b className='mr-1'>thinkaboutzu</b>
-                          Commented: Awesome!
+                          <b className='mr-1'>{
+                            'thinkaboutzu'.length > 10 ? 'thinkaboutzu'.slice(0, 8) + '...' : 'thinkaboutzu'
+                          }</b>
+                          commented: Awesome! <span className='text-gray-500'>1d</span>
                         </p>
                       </div>
                       <img className='ml-2' src='post_1.jpg' width={42} height={42} />
@@ -80,9 +86,9 @@ export default function Navbar() {
               </ul>
             </div>
           </button>
-          <button id='profile_menu' className='group relative focus:outline-none'>
+          <button id='profile_menu' className='group focus:outline-none static sm:relative'>
             <img className='ml-6 rounded-full group-focus:border group-focus:border-black group-focus:p-0.5' src='mina.jpg' width={24} height={24} />
-            <div id="dropdown" className='bg-white border shadow-md rounded-md w-64 right-0 mt-2 absolute invisible group-focus:visible'>
+            <div id="dropdown" className='bg-white border shadow-md rounded-md absolute right-0 mt-2 w-full sm:w-64 invisible group-focus:visible'>
               <ul className='text-left'>
                 <li className='px-4 py-2 hover:bg-gray-50 text-md flex items-center'>
                   <BsPersonCircle className='mr-4' />
