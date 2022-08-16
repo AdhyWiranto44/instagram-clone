@@ -7,7 +7,7 @@ I want to make Instagram great again !
 ### Navbar
 
 - ✅ profile hover
-- [-] activities hover
+- ✅ activities hover
 - [-] explore button
 - [-] create new post modal
 - [-] dm page
