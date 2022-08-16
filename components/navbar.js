@@ -32,7 +32,7 @@ export default function Navbar() {
           <BsPlusSquare className='text-2xl ml-6' />
           <BsCompass className='text-2xl ml-6' />
           <BsHeart className='text-2xl ml-6' />
-          <button id='profile_menu' className='group relative'>
+          <button id='profile_menu' className='group relative focus:outline-none'>
             <img className='ml-6 rounded-full group-focus:border group-focus:border-black group-focus:p-0.5' src='mina.jpg' width={24} height={24} />
             <div id="dropdown" className='bg-white border shadow-md rounded-md w-64 right-0 mt-2 absolute invisible group-focus:visible'>
               <ul className='text-left'>
