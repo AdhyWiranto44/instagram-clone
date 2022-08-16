@@ -29,9 +29,11 @@ export default function Navbar() {
             </a>
           </Link>
           <BsChatText className='text-2xl ml-6' />
-          <BsPlusSquare className='text-2xl ml-6' />
+          <button id='post_menu' className='focus:outline-none'>
+            <BsPlusSquare className='text-2xl ml-6' />
+          </button>
           <BsCompass className='text-2xl ml-6' />
-          <button id='profile_menu' className='group focus:outline-none static sm:relative'>
+          <button id='activities_menu' className='group focus:outline-none static sm:relative'>
             <BsHeart className='text-2xl ml-6' />
             <div id="dropdown" className='bg-white border shadow-md rounded-md absolute right-0 mt-2 w-full sm:w-96 invisible group-focus:visible'>
               <ul className='text-left'>
