@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
       <PostModal />
       {/* End of Post Modal */}
 
-      <Script src="js/script.js" />
+      <Script src="js/main.js" />
     </>
   )
 }

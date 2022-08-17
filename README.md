@@ -8,7 +8,7 @@ I want to make Instagram great again !
 
 - ✅ profile hover
 - ✅ activities hover
-- [-] explore button
+- ✅ explore button
 - ✅ create new post modal
 - [-] dm page
 - ✅ home link

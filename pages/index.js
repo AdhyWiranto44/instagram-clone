@@ -2,10 +2,9 @@ import Navbar from '../components/navbar';
 import Profile from '../components/profile';
 import Suggestions from '../components/suggestions';
 import Footer from '../components/footer';
-import Script from 'next/script';
-import PostModal from '../components/post_modal';
 import Post from '../components/post';
 import Story from '../components/story';
+import Script from 'next/script';
 
 export default function Home() {
   const stories = [{ story_posted: true }, {}];
@@ -47,6 +46,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <Script src="js/index.js" />
     </>
   )
 }
