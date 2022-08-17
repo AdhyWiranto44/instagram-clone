@@ -47,12 +47,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Post Modal */}
-      <PostModal />
-      {/* End of Post Modal */}
-
-      <Script src="js/script.js" />
     </>
   )
 }

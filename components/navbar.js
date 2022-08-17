@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Link from 'next/link';
-import Script from 'next/script';
 import {
   BsSearch,
   BsHouseDoor,
@@ -23,18 +23,20 @@ export default function Navbar() {
           <input type="text" placeholder='Search' className='ml-3 bg-gray-100' />
         </div>
         <div id="navmenus" className='flex items-center'>
-          <Link href="/">
-            <a>
-              <BsHouseDoor className='text-2xl' />
-            </a>
-          </Link>
-          <BsChatText className='text-2xl ml-6' />
+          <a href="/" className='focus:outline-none'>
+            <BsHouseDoor className='text-2xl' />
+          </a>
+          <a href="/direct_message" className='focus:outline-none'>
+            <BsChatText className='text-2xl ml-6' />
+          </a>
           <button id='post_menu' className='focus:outline-none'>
             <BsPlusSquare className='text-2xl ml-6' />
           </button>
-          <BsCompass className='text-2xl ml-6' />
-          <button id='activities_menu' className='group focus:outline-none static sm:relative'>
-            <BsHeart className='text-2xl ml-6' />
+          <a href="/explore" className='focus:outline-none'>
+            <BsCompass className='text-2xl ml-6' />
+          </a>
+          <button id='activities_menu' className='group focus:outline-none static sm:relative ml-6'>
+            <BsHeart className='text-2xl' />
             <div id="dropdown" className='bg-white border shadow-md rounded-md absolute right-0 mt-2 w-full sm:w-96 invisible group-focus:visible'>
               <ul className='text-left'>
                 <li className='px-4 py-2 hover:bg-gray-50'>
@@ -88,8 +90,8 @@ export default function Navbar() {
               </ul>
             </div>
           </button>
-          <button id='profile_menu' className='group focus:outline-none static sm:relative'>
-            <img className='ml-6 rounded-full group-focus:border group-focus:border-black group-focus:p-0.5' src='mina.jpg' width={24} height={24} />
+          <button id='profile_menu' className='group focus:outline-none static sm:relative ml-6'>
+            <img className='rounded-full group-focus:border group-focus:border-black group-focus:p-0.5' src='mina.jpg' width={24} height={24} />
             <div id="dropdown" className='bg-white border shadow-md rounded-md absolute right-0 mt-2 w-full sm:w-64 invisible group-focus:visible'>
               <ul className='text-left'>
                 <li className='px-4 py-2 hover:bg-gray-50 text-md flex items-center'>
