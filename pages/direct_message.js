@@ -7,8 +7,10 @@ export default function DirectMessage() {
     <>
       <div className="mb-10">
         <Navbar />
-        <div id="main" className="container-fluid lg:px-40 xl:px-56 mt-0 md:mt-6">
-          <h1>Direct Message Page</h1>
+        <div id="main" className="container mx-auto lg:px-40 mt-0 md:mt-6">
+          <div className="bg-white border rounded-md p-3">
+            <h1>Direct Message Page</h1>
+          </div>
         </div>
       </div>
     </>

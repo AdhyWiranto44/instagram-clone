@@ -13,14 +13,14 @@ export default function Profile() {
         <div className="ml-4">
           <Link href="/dahyuneee">
             <a>
-              <p className='font-bold'>dahyuneee</p>
+              <p className='text-sm font-bold'>dahyuneee</p>
             </a>
           </Link>
-          <p className='text-gray-400'>Kim Dahyun</p>
+          <p className='text-sm text-gray-400'>Kim Dahyun</p>
         </div>
       </div>
       <Link href="#">
-        <a className='text-blue-400 font-bold'>
+        <a className='text-sm text-blue-400 font-bold'>
           Switch
         </a>
       </Link>

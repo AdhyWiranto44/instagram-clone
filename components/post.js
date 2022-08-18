@@ -25,7 +25,7 @@ export default function Post(props) {
             <div className="ml-4">
               <Link href="/nayeonyny">
                 <a>
-                  <p className='font-bold'>nayeonyny</p>
+                  <p className='text-sm font-bold'>nayeonyny</p>
                 </a>
               </Link>
             </div>

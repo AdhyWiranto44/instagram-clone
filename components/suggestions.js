@@ -5,9 +5,9 @@ export default function Suggestions() {
   return (
     <div id="suggestions" className='mb-6'>
       <div className="flex justify-between mb-2">
-        <p className='font-bold text-gray-400'>Suggestions For You</p>
+        <p className='text-sm font-bold text-gray-400'>Suggestions For You</p>
         <Link href="#">
-          <a className='text-black font-bold'>
+          <a className='text-sm text-black font-bold'>
             See All
           </a>
         </Link>
@@ -23,14 +23,14 @@ export default function Suggestions() {
             <div className="ml-4">
               <Link href="/nayeonyny">
                 <a>
-                  <p className='font-bold'>nayeonyny</p>
+                  <p className='text-sm font-bold'>nayeonyny</p>
                 </a>
               </Link>
-              <p className='text-gray-400'>Im Nayeon</p>
+              <p className='text-sm text-gray-400'>Im Nayeon</p>
             </div>
           </div>
           <Link href="#">
-            <a className='text-blue-400 font-bold'>
+            <a className='text-sm text-blue-400 font-bold'>
               Follow
             </a>
           </Link>
@@ -45,14 +45,14 @@ export default function Suggestions() {
             <div className="ml-4">
               <Link href="/thinkaboutzu">
                 <a>
-                  <p className='font-bold'>thinkaboutzu</p>
+                  <p className='text-sm font-bold'>thinkaboutzu</p>
                 </a>
               </Link>
-              <p className='text-gray-400'>Chou Tzuyu</p>
+              <p className='text-sm text-gray-400'>Chou Tzuyu</p>
             </div>
           </div>
           <Link href="#">
-            <a className='text-blue-400 font-bold'>
+            <a className='text-sm text-blue-400 font-bold'>
               Follow
             </a>
           </Link>

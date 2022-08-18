@@ -30,7 +30,7 @@ export default function Home() {
     <>
       <div className='mb-10'>
         <Navbar />
-        <div id="main" className='container-fluid lg:px-40 xl:px-56 mt-0 md:mt-6 flex justify-center'>
+        <div id="main" className='container-fluid lg:px-40 xl:px-72 mt-0 md:mt-6 flex justify-center'>
           <div id="left" className='w-full md:w-8/12'>
             <div id="stories" className='bg-white border-b md:border mb-6 p-4 flex items-center overflow-x-scroll'>
               {renderStories()}
