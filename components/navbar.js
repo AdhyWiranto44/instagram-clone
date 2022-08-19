@@ -26,7 +26,7 @@ export default function Navbar() {
           <a href="/" className='focus:outline-none'>
             <BsHouseDoor className='text-2xl' />
           </a>
-          <a href="/direct_message" className='focus:outline-none'>
+          <a href="/direct" className='focus:outline-none'>
             <BsChatText className='text-2xl ml-6' />
           </a>
           <button id='post_menu' className='focus:outline-none'>
